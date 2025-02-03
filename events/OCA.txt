@@ -1,0 +1,61 @@
+add_namespace = oca
+country_event = {
+    id = oca.1
+	title = oca.1.t
+	desc = oca.1.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+ option = {
+	  name = oca.1.a
+	  ai_chance = {factor = 70}
+	  trigger = {tag = OCA}
+	ASA = {
+	clr_country_flag = ASA_give_rubber
+    }
+	ASA =  { country_event = asa.2 }
+ }
+ option = {
+     name = oca.1.b
+	 ai_chance = {factor = 30}
+	 trigger = {tag = OCA}
+   hidden_effect = {
+   OCA = { 
+	  transfer_state = 668 add_state_core = 668 	
+	  transfer_state = 673 add_state_core = 673
+      transfer_state = 334 add_state_core = 334
+      transfer_state = 333 add_state_core = 333
+      transfer_state = 335 add_state_core = 335 
+      transfer_state = 667 add_state_core = 667  	
+      transfer_state = 672 add_state_core = 672
+	  transfer_state = 721 add_state_core = 721
+   }
+   ASA = { set_country_flag = ASA_rubber}
+  }
+custom_effect_tooltip = my_tooltip_tt  
+ }
+}
+
+country_event = {
+    id = oca.2
+	title = oca.2.t
+	desc = oca.2.desc
+	is_triggered_only = yes
+	option = {
+	  name = oca.2.a
+	  ai_chance = {factor = 50}
+	  trigger = {tag = OCA}
+	 hidden_effect = {
+	   give_resource_rights = {
+			    receiver = ASA
+				state = 335
+       }
+	 }
+	  
+ }
+}
+
+
+
+		

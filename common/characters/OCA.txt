@@ -1,0 +1,50 @@
+characters = {
+	OCA_Bernand = {
+		name = OCA_Bernand
+		portraits = {
+			civilian = {
+				large = GFX_Bernand
+			}
+		}
+
+	country_leader = {
+		ideology = fascism_ideology
+	    expire = "1955.1.1.1"
+		id = -1
+		desc = OCA_Bernand_desc
+	    }
+	}
+
+	OCA_Robert = {
+		name = "Robert"
+		portraits = {
+			civilian = {
+				small = "GFX_Robert"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = OCA_Robert_token
+			ledger = civilian
+			cost = 150
+			traits = { true_economist }
+	}
+}
+	
+	
+	OCA_Carl_III = {
+        name = "Carl"
+        portraits = {
+            civilian = {
+                small = "GFX_Carl_III"
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = OCA_Carl_III_token
+            ledger = civilian
+            cost = 150
+            traits = { economy_man }
+        }
+    }
+}

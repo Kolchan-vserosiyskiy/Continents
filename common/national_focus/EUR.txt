@@ -1,0 +1,26 @@
+focus_tree = {
+	id = EUR_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = EUR
+		}
+	}
+
+default = 0
+
+
+focus = {
+	id = EUR_start_politic
+	cost = 5
+	x = 17
+	y = 0
+	completion_reward = {
+		add_political_power = 100
+		}
+}
+
+
+
+}

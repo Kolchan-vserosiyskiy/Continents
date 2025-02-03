@@ -1,0 +1,25 @@
+state = {
+	id = 982
+	name ="STATE_982" # Barotseland
+	
+	state_category = rural
+	manpower = 200000
+
+	history = {
+
+		owner = EUR
+		add_core_of = EUR
+		
+
+		buildings = {
+			infrastructure = 3
+		}
+	}
+
+	provinces = {
+		9526 11510 3502 1290 7438 4351 9528 11480 576 11552 432 9462 508 1318 3563 4322 1254
+	}
+	
+	buildings_max_level_factor = 1.000
+	local_supplies = 0.0 
+}

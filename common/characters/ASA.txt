@@ -1,0 +1,594 @@
+characters = {
+	ASA_Hirohito = {
+		name = ASA_Hirohito
+		portraits = {
+			civilian = {
+				large = GFX_Hirohito
+			}
+		}
+
+	country_leader = {
+		ideology = fascism_ideology
+	    expire = "1955.1.1.1"
+		id = -1
+		desc = ASA_Hirohito_desc
+		traits = {genius_economist}
+	    }
+	}
+	
+	
+	ASA_Senjuro = {
+	  name = ASA_Senjuro
+	  portraits = {
+	     army = {
+		   large = GFX_Senjuro
+	     }
+	  }
+	  corps_commander = {
+	     skill = 7
+		 attack_skill = 6
+		 defense_skill = 7
+		 planning_skill = 5
+		 logistics_skill = 6
+	     id = -1 
+		 traits = { hill_fighter ranger infantry_leader  panzer_leader brilliant_strategist armor_officer trickster organizer harsh_leader  }
+	  }
+	}
+	
+	
+	ASA_Hideko = {
+	 name = ASA_Hideko
+	 portraits = {
+	   civilian = {
+	     large = GFX_Hideko
+	   }
+	 }
+	  corps_commander = {
+	     skill = 7
+		 attack_skill = 6
+		 defense_skill = 5
+		 planning_skill = 5
+		 logistics_skill = 6
+	     id = -1 
+		 traits = { desert_fox infantry_leader panzer_leader trickster }
+      }
+    }
+	
+	ASA_Shikai = {
+	  name = ASA_Shikai
+	  portraits = {
+	    civilian = {
+		  large = GFX_Shikai
+		}
+	  }
+     corps_commander = {
+	     skill = 6
+		 attack_skill = 5
+		 defense_skill = 5
+		 planning_skill = 5
+		 logistics_skill = 6
+	     id = -1 
+		 traits = { urban_assault_specialist infantry_leader brilliant_strategist infantry_officer bearer_of_artillery }
+      }
+	}
+	
+	
+	ASA_Sunchan = {
+	  name = ASA_Sunchan
+	  portraits = {
+	    civilian = {
+		  large = GFX_Sunchan
+		}
+	  }
+     corps_commander = {
+	     skill = 6
+		 attack_skill = 4
+		 defense_skill = 3
+		 planning_skill = 5
+		 logistics_skill = 5
+	     id = -1 
+		 traits = { jungle_rat urban_assault_specialist infantry_leader cavalry_leader cavalry_officer trickster armor_officer }
+      }
+	}
+    
+	
+	ASA_Tomoyuki = {
+	  name = ASA_Tomoyuki
+	  portraits = {
+	    civilian = {
+		  large = GFX_Tomoyuki
+		}
+	  }
+     corps_commander = {
+	     skill = 6
+		 attack_skill = 6
+		 defense_skill = 2
+		 planning_skill = 3
+		 logistics_skill = 5
+	     id = -1 
+		 traits = { commando desert_fox trait_mountaineer naval_invader trait_engineer }
+      }
+	}
+ 
+ 
+    
+	ASA_Kuribayashi = {
+	  name = ASA_Kuribayashi
+	  portraits = {
+	    civilian = {
+		  large = GFX_Kuribayashi
+		}
+	  }
+     corps_commander = {
+	     skill = 4
+		 attack_skill = 4
+		 defense_skill = 4
+		 planning_skill = 4
+		 logistics_skill = 4
+	     id = -1 
+		 traits = { infantry_leader infantry_officer trickster 	organizer }
+      }
+	}
+ 
+    
+	ASA_Yasumasa = {
+	  name = ASA_Yasumasa
+	  portraits = {
+	    civilian = {
+		  large = GFX_Yasumasa
+		}
+	  }
+     corps_commander = {
+	     skill = 4
+		 attack_skill = 3
+		 defense_skill = 6
+		 planning_skill = 5
+		 logistics_skill = 5
+	     id = -1 
+		 traits = { infantry_leader infantry_officer bearer_of_artillery media_personality harsh_leader commando inflexible_strategist  }
+      }
+	}
+ 
+    
+	ASA_Lihuang = {
+	  name = ASA_Lihuang
+	  portraits = {
+	    civilian = {
+		  large = GFX_Lihuang
+		}
+	  }
+     corps_commander = {
+	     skill = 5
+		 attack_skill = 6
+		 defense_skill = 6
+		 planning_skill = 5
+		 logistics_skill = 5
+	     id = -1 
+		 traits = { hill_fighter armor_officer panzer_leader harsh_leader organizer trait_engineer war_hero trait_reckless inflexible_strategist  }
+      }
+	}
+ 
+  
+    ASA_Bufang = {
+	  name = ASA_Bufang
+	  portraits = {
+	    civilian = {
+		  large = GFX_Bufang
+		}
+	  }
+     corps_commander = {
+	     skill = 4
+		 attack_skill = 4
+		 defense_skill = 4
+		 planning_skill = 5
+		 logistics_skill = 5
+	     id = -1 
+		 traits = { infantry_leader war_hero harsh_leader commando  trickster  }
+      }
+	}
+ 
+ 
+     ASA_Sukenuri = {
+	  name = ASA_Sukenuri
+	  portraits = {
+	    civilian = {
+		  large = GFX_Sukenuri
+		}
+	  }
+     corps_commander = {
+	     skill = 5
+		 attack_skill = 5
+		 defense_skill = 3
+		 planning_skill = 5
+		 logistics_skill = 5
+	     id = -1 
+		 traits = { infantry_leader cavalry_officer winter_expert panzer_leader trickster trait_engineer }
+      }
+	}
+ 
+ 
+ #советники
+ 
+ ASA_Esimity = {
+        name = "Esimity"
+        portraits = {
+            civilian = {
+                small = "GFX_Esimity"
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = ASA_Esimity_token
+            ledger = civilian
+            cost = 150
+            traits = { war_industrial_genius}
+        }
+    }
+	
+ ASA_Prince_Asaka = {
+        name = "Prince_Asaka"
+        portraits = {
+            civilian = {
+                small = "GFX_Prince_Asaka"
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = ASA_Prince_Asaka_token
+            ledger = civilian
+            cost = 150
+            traits = { economy_man }
+        }
+    }
+	
+ ASA_Prince_Chichibu = {
+        name = "Prince_Chihibu"
+        portraits = {
+            civilian = {
+                small = "GFX_Prince_Chichibu"
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = ASA_Prince_Chichibu_token
+            ledger = civilian
+            cost = 150
+            traits = { defence_economist }
+        }
+    }
+ 
+ ASA_Prince_Mikasa = {
+        name = "Prince_Mikasa"
+        portraits = {
+            civilian = {
+                small = "GFX_Prince_Mikasa"
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = ASA_Prince_Mikasa_token
+            ledger = civilian
+            cost = 150
+            traits = { undenyable_genius }
+        }
+    }
+ 
+  
+ ASA_Mao = {
+        name = "Mao_Tzudeng"
+        portraits = {
+            civilian = {
+                small = "GFX_Mao"
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = ASA_Mao_token
+            ledger = civilian
+            cost = 150
+            traits = { fleet_genius }
+        }
+    }
+ 
+  
+ ASA_LIUSHA = {
+        name = "LIUSHA"
+        portraits = {
+            civilian = {
+                small = "GFX_LIUSHA"
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = ASA_LIUSHA_token
+            ledger = civilian
+            cost = 150
+            traits = { sos_helper }
+			available = {
+			   date>1941.1.1
+            }
+        }
+    }
+ 
+ 
+   ASA_Ozaki = {
+        name = "Ozaki"
+        portraits = {
+            civilian = {
+                small = "GFX_Ozaki"
+            }
+        }
+        advisor = {
+            slot = political_advisor
+            idea_token = ASA_Ozaki_token
+            ledger = civilian
+            cost = 150
+            traits = { stability_genius }
+        }
+    }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ ASA_Yuming = {
+        name = "Yuming"
+        portraits = {
+            civilian = {
+                small = "GFX_Yuming"
+            }
+        }
+        advisor = {
+            slot = army_chief
+            idea_token = ASA_Yuming_token
+            ledger = army
+            cost = 150
+            traits = { attack_man }
+        }
+    }
+ 
+ 
+ 
+ ASA_Kaishi = {
+        name = "Kaishi"
+        portraits = {
+            civilian = {
+                small = "GFX_Kaishi"
+            }
+        }
+        advisor = {
+            slot = army_chief
+            idea_token = ASA_Kaishi_token
+            ledger = army
+            cost = 150
+            traits = { defence_man }
+        }
+    } 
+ 
+ 
+ ASA_Anabuki = {
+        name = "Anabuki"
+        portraits = {
+            civilian = {
+                small = "GFX_Anabuki"
+            }
+        }
+        advisor = {
+            slot = air_chief
+            idea_token = ASA_Anabuki_token
+            ledger = army
+            cost = 150
+            traits = { air_man }
+        }
+    } 
+ 
+ ASA_Sasaki = {
+        name = "Sasaki"
+        portraits = {
+            civilian = {
+                small = "GFX_Sasaki"
+            }
+        }
+        advisor = {
+            slot = air_chief
+            idea_token = ASA_Sasaki_token
+            ledger = army
+            cost = 150
+            traits = { air_boy }
+        }
+    } 
+ 
+ 
+ ASA_Kuroe = {
+        name = "Kuroe"
+        portraits = {
+            civilian = {
+                small = "GFX_Kuroe"
+            }
+        }
+        advisor = {
+            slot = air_chief
+            idea_token = ASA_Kuroe_token
+            ledger = army
+            cost = 150
+            traits = { air_child }
+        }
+    } 
+ 
+ 
+ ASA_Wang = {
+        name = "Wang"
+        portraits = {
+            civilian = {
+                small = "GFX_Wang"
+            }
+        }
+        advisor = {
+            slot = theorist
+            idea_token = ASA_Kuroe_token
+            ledger = army
+            cost = 150
+            traits = { air_theorist_doctrine }
+        }
+    } 
+ 
+ 
+ ASA_Chenault = {
+        name = "Chenault"
+        portraits = {
+            civilian = {
+                small = "GFX_Chenault"
+            }
+        }
+        advisor = {
+            slot = theorist
+            idea_token = ASA_Chenault_token
+            ledger = army
+            cost = 150
+            traits = { gay_man }
+        }
+    } 
+ 
+ 
+ ASA_Siguama = {
+        name = "Siguama"
+        portraits = {
+            civilian = {
+                small = "GFX_Siguama"
+            }
+        }
+        advisor = {
+            slot = theorist
+            idea_token = ASA_Siguama_token
+            ledger = army
+            cost = 150
+            traits = { land_theorist_doctrine }
+        }
+    } 
+ 
+ ASA_Kanin = {
+        name = "Kanin"
+        portraits = {
+            civilian = {
+                small = "GFX_Kanin"
+            }
+        }
+        advisor = {
+            slot = theorist
+            idea_token = ASA_Kanin_token
+            ledger = army
+            cost = 150
+            traits = { navy_theorist_doctrine }
+        }
+    } 
+ 
+ 
+ 
+ ASA_Shisan = {
+        name = "Shisan"
+        portraits = {
+            civilian = {
+                small = "GFX_Shisan"
+            }
+        }
+        advisor = {
+            slot = high_command
+            idea_token = ASA_Shisan_token
+            ledger = army
+            cost = 150
+            traits = { infantry_man }
+        }
+    } 
+ 
+ 
+ 
+ ASA_Pui = {
+        name = "Pui"
+        portraits = {
+            civilian = {
+                small = "GFX_Pui"
+            }
+        }
+        advisor = {
+            slot = high_command
+            idea_token = ASA_Pui_token
+            ledger = army
+            cost = 150
+            traits = { tank_man }
+        }
+    } 
+ 
+ 
+  ASA_Chen = {
+        name = "Chen"
+        portraits = {
+            civilian = {
+                small = "GFX_Chen"
+            }
+        }
+        advisor = {
+            slot = high_command
+            idea_token = ASA_Chen_token
+            ledger = army
+            cost = 150
+            traits = { air_sigma }
+        }
+    } 
+ 
+  ASA_Matsuia = {
+        name = "Matsuia"
+        portraits = {
+            civilian = {
+                small = "GFX_Matsuia"
+            }
+        }
+        advisor = {
+            slot = high_command
+            idea_token = ASA_Matsuia_token
+            ledger = army
+            cost = 150
+            traits = { attrition_boy }
+        }
+    } 
+ 
+  ASA_Yusan = {
+        name = "Yusan"
+        portraits = {
+            civilian = {
+                small = "GFX_Yusan"
+            }
+        }
+        advisor = {
+            slot = high_command
+            idea_token = ASA_Yusan_token
+            ledger = army
+            cost = 150
+            traits = { 	army_CombinedArms_3 }
+        }
+    } 
+ 
+ ASA_Yue = {
+        name = "Yue"
+        portraits = {
+            civilian = {
+                small = "GFX_Yue"
+            }
+        }
+        advisor = {
+            slot = high_command
+            idea_token = ASA_Yue_token
+            ledger = army
+            cost = 150
+            traits = { artillery_sigma }
+        }
+    } 
+ 
+ 
+ 
+ 
+ }

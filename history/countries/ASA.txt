@@ -1,0 +1,105 @@
+capital = 608
+set_convoys = 100
+OOB = "ASA_1936"
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_trucks = 1
+	tech_support = 1
+	tech_recon = 1
+	motorised_infantry = 1
+	gwtank_chassis = 1
+	basic_light_tank_chassis = 1
+	improved_light_tank_chassis = 1
+	basic_heavy_tank_chassis = 1
+	interwar_antitank = 1
+	antitank1 = 1
+	interwar_artillery = 1
+	interwar_antiair = 1
+	armor_tech_1 = 1
+	armor_tech_2 = 1
+	engine_tech_1 = 1
+	gw_artillery = 1
+	tech_engineers = 1
+	iw_small_airframe = 1
+	basic_small_airframe = 1
+	iw_medium_airframe = 1
+	basic_medium_airframe = 1
+	iw_large_airframe = 1
+	basic_large_airframe = 1
+	early_bombs = 1
+	engines_1 = 1
+	engines_2 = 1
+	aa_lmg = 1
+	basic_train = 1
+	electronic_mechanical_engineering = 1
+	aircraft_construction = 1
+	air_torpedoe_1 = 1
+    marines = 1
+	
+}
+set_stability = 0.7
+set_war_support = 0.75
+
+
+
+recruit_character = ASA_Hirohito
+recruit_character = ASA_Senjuro
+recruit_character = ASA_Hideko
+recruit_character = ASA_Shikai
+recruit_character = ASA_Sunchan
+recruit_character = ASA_Tomoyuki
+recruit_character = ASA_Kuribayashi
+recruit_character = ASA_Yasumasa
+recruit_character = ASA_Lihuang
+recruit_character = ASA_Bufang
+recruit_character = ASA_Sukenuri
+recruit_character = ASA_Esimity
+recruit_character = ASA_Prince_Asaka
+recruit_character = ASA_Prince_Chichibu
+recruit_character = ASA_Prince_Mikasa
+recruit_character = ASA_Mao
+recruit_character = ASA_LIUSHA
+recruit_character = ASA_Yuming
+recruit_character = ASA_Ozaki
+recruit_character = ASA_Kaishi
+recruit_character = ASA_Anabuki
+recruit_character = ASA_Sasaki
+recruit_character = ASA_Kuroe
+recruit_character = ASA_Wang
+recruit_character = ASA_Chenault
+recruit_character = ASA_Siguama
+recruit_character = ASA_Kanin
+recruit_character = ASA_Shisan
+recruit_character = ASA_Pui
+recruit_character = ASA_Chen
+recruit_character = ASA_Matsuia
+recruit_character = ASA_Yusan
+recruit_character = ASA_Yue
+
+add_ideas = ASA_Asian_united_economy
+add_ideas = siemens
+
+army_experience = 700
+navy_experience = 700
+air_experience = 700
+
+add_offsite_building = {
+	type = arms_factory
+	level = 138
+}
+
+
+set_research_slots = 6
+	 
+set_politics = {
+	ruling_party = fascism
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	neutrality = 100
+}
+

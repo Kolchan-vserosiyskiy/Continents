@@ -1,0 +1,52 @@
+state = {
+	id = 46
+	name = "STATE_46" # Muntenia
+	manpower = 3971400 # was 4461400
+	resources = {
+		oil = 44 # was: 70
+	}
+
+	state_category = city
+
+	history = {
+
+ 
+		add_core_of = EUR
+		owner = EUR
+
+		victory_points = { 
+			9617 20 
+		}
+
+		victory_points = { 
+			3663 5 
+		}
+		victory_points = {
+			13416 20
+		}
+		victory_points = {
+			11603 20
+		}
+		victory_points = {
+			6658 20
+		}
+		victory_points = {
+			674 20
+		}
+		
+
+		buildings = {
+			infrastructure = 3
+			arms_factory = 3
+			industrial_complex = 1
+			air_base = 3
+		}
+		
+	}
+
+	provinces = {
+		660 674 818 3636 3639 3663 6658 6677 6695 9617 9651 11603 11619 11636 13416
+	}
+
+	local_supplies = 0.0 
+}

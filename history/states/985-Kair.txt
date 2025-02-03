@@ -1,0 +1,48 @@
+state = {
+	id = 985
+	name ="STATE_985" 
+	
+	state_category = rural
+	manpower = 690043
+
+	resources = {
+		chromium = 16
+		tungsten = 4
+	}
+
+	history = {
+
+		owner = AFR
+		add_core_of = AFR
+        
+		victory_points = {
+			7011 5
+		}
+		
+		victory_points = {
+			12004 5
+		}
+		
+		victory_points = {
+			13389 50
+		}
+		
+		victory_points = {
+			12049 5 
+		}
+		
+		victory_points = {
+			4073 3 
+		}
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces = {
+		12049 4073 10005 7011 12004 7091 10073 11964 13389
+	}
+	
+	buildings_max_level_factor = 1.000
+	local_supplies = 0.0 
+}

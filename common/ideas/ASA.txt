@@ -1,0 +1,46 @@
+ideas = {
+ 
+ 
+   industrial_concern = {
+   kawasaki = {
+			
+			research_bonus = {
+				industry = 0.15
+			}
+			
+			traits = { industrial_concern }
+		}
+    
+	sumitomo = {
+						
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_concern }
+		}
+ 
+    shanghai_electronics = {
+		
+			picture = generic_electronics_concern_1
+
+			available = {
+				controls_state = 613
+			}
+			
+			research_bonus = {
+				industry = 0.1
+				synth_resources = 0.15
+			}
+			
+			traits = { electronics_concern }
+	}
+ 
+     
+ 
+ 
+ 
+ 
+ 
+ 
+}

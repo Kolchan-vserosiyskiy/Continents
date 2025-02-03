@@ -1,0 +1,26 @@
+bookmarks = {
+	bookmark = {
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 1936.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "EUR"
+		default_country = "ASA"
+		default_country = "AFR"
+		default_country = "OCA"
+		default = yes
+		
+		"EUR"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+		"ASA"={
+           history = "OTHER_GATHERING_STORM_DESC"
+	    }
+		"AFR"={
+           history = "OTHER_GATHERING_STORM_DESC"
+	    }
+		"OCA"={
+		   history = "OTHER_GATHERING_STORM_DESC"
+		}
+    }
+}

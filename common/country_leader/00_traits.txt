@@ -1,0 +1,177 @@
+
+#sprite = 9 защита
+#sprite = 8 на танки
+#sprite = 7 атака
+#sprite = 6 топливо
+#sprite = 5 пеха
+#sprite = 4 подлодка
+#sprite = 3 якорь
+#sprite = 2 торпеда
+#sprite = 1 самолёт
+
+
+
+
+leader_traits = {
+#Азиа
+ genius_economist = {
+	random = no
+	production_factory_max_efficiency_factor = 0.1
+	industrial_capacity_factory = 0.05
+    }
+war_industrial_genius = {
+        random = no
+		production_speed_arms_factory_factor = 0.05
+}
+economy_man = {
+       random = no
+	   conversion_cost_civ_to_mil_factor = -0.15
+	   production_speed_buildings_factor = 0.05
+	   production_speed_infrastructure_factor = 0.15
+	   consumer_goods_factor = -0.1
+}
+defence_economist = {
+       random = no
+	   production_speed_bunker_factor = 0.2
+	   production_speed_coastal_bunker_factor = 0.2
+}
+undenyable_genius = {
+       random = no
+       research_speed_factor = 0.1
+       stability_factor = 0.10
+       war_support_factor = 0.10
+       max_command_power = 20
+}
+fleet_genius = {
+      random = no
+      industrial_capacity_dockyard = 0.15
+	  production_speed_dockyard_factor = 0.1
+}	  
+sos_helper = {
+     random = no
+	 industrial_capacity_factory = 0.1
+	 production_factory_max_efficiency_factor = 0.05
+}
+stability_genius = {
+          random = no
+		  stability_weekly = 0.005
+		  consumer_goods_factor = -0.1
+		  political_power_factor = 0.1
+}
+attack_man = {
+        random = no
+        army_attack_factor = 0.1
+		experience_gain_army = 0.15
+		sprite = 7
+}	
+defence_man = {
+        random = no 
+         army_defence_factor = 0.15
+		 experience_gain_army = 0.15
+		 sprite = 9
+}
+air_man = {
+     sprite = 1
+	 random = no
+	  equipment_bonus = {
+			small_plane_cas_airframe = {
+				instant = yes
+				air_ground_attack = 0.15
+			}
+	   }
+	   experience_gain_air = 0.15
+}
+air_child = {
+        sprite = 1
+		random = no
+		air_accidents_factor = -0.2
+		experience_gain_army = 0.2
+}
+air_boy  = {
+       sprite = 1
+	   random = no
+		experience_gain_army = 0.30
+		experience_gain_air_factor = 0.15
+}
+air_theorist_doctrine = {
+        sprite = 14
+		air_doctrine_cost_factor = -0.15
+		small_plane_cas_airframe = {
+				instant = yes
+				air_ground_attack = 0.1
+			}
+}
+gay_man = {
+     sprite = 14
+	 cat_operational_integrity_cost_factor = -0.1
+}
+land_theorist_doctrine = {
+      sprite = 14
+	  land_doctrine_cost_factor = -0.15
+}
+navy_theorist_doctrine = {
+      sprite = 14
+	  naval_doctrine_cost_factor = -0.15
+}
+infantry_man = {
+     sprite = 5
+	 army_infantry_attack_factor = 0.1
+	 army_infantry_defence_factor = 0.15
+}
+tank_man = {
+    sprite = 8
+	army_armor_attack_factor = 0.15
+    army_armor_defence_factor = 0.15
+}
+air_sigma = {
+     sprite = 1
+	 air_superiority_efficiency = 0.1
+}
+attrition_boy = {
+      sprite = 6
+	  attrition = -0.1
+}
+artillery_sigma = {
+        sprite = 5
+		army_artillery_attack_factor = 0.15
+		army_artillery_defence_factor = 0.1
+}
+army_CombinedArms_3	={
+        sprite = 8
+		motorized_attack_factor = 0.15
+		motorized_defence_factor = 0.15
+		mechanized_attack_factor = 0.15
+		mechanized_defence_factor = 0.15
+}
+
+		
+#Африка
+skilled_airplane_maker = {
+        random = no
+		equipment_bonus = {
+            fighter = {
+                build_cost_ic = -0.05
+                instant = yes
+            }
+			cas = {
+			 build_cost_ic = -0.05
+             instant = yes
+			}
+        }
+}
+
+
+
+#Океания
+
+true_economist = {
+	random = no
+	build
+}
+
+
+
+
+
+
+}

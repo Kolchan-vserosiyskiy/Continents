@@ -1,0 +1,4 @@
+EUR = "countries/Europe.txt"
+ASA = "countries/Asia.txt"
+AFR = "countries/Africa.txt"
+OCA = "countries/Oceania.txt"

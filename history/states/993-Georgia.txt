@@ -1,0 +1,24 @@
+state = {
+	id = 993
+	name ="STATE_993" 
+	
+	state_category = rural
+	manpower = 12000000
+
+	history = {
+
+		owner = EUR
+		add_core_of = EUR
+
+		buildings = {
+			infrastructure = 4
+		}
+	}
+
+	provinces = {
+		3668 9645 4463 7554 3711 7624 1450
+	}
+	
+	buildings_max_level_factor = 1.000
+	local_supplies = 0.0 
+}

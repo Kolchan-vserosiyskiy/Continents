@@ -1,0 +1,15 @@
+declare_war_category = {
+    icon = GER_weltpolitik
+	priority = 0
+	allowed = {
+	     original_tag = ASA
+	}
+}
+
+give_rubber_to_oca_category = {
+        icon = ASA_weltpolitik
+		priority = 0
+		allowed = {
+		    original_tag = ASA
+		}
+}

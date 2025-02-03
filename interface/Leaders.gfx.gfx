@@ -1,0 +1,14 @@
+spriteTypes = {	
+    spriteType = {
+		name = "GFX_Hirohito"
+		texturefile = "gfx\leaders\ASA\Portrait_ASA_Hirohito.dds"
+	}
+    spriteType = {
+		name = "GFX_Senjuro"
+		texturefile = "gfx\leaders\ASA\Portrait_ASA_Senjuro.dds"
+	}
+    spriteType = {
+		name = "GFX_Djay_Sinh"
+		texturefile = "gfx\leaders\EUR\Portrait_EUR_Djay_Sinh.dds"
+	}
+}				

@@ -1,0 +1,200 @@
+spriteTypes = {	
+   
+#Азиа
+   spriteType = {
+		name = "GFX_Hirohito"
+		texturefile = "gfx\leaders\ASA\Portrait_ASA_Hirohito.dds"
+	}
+    spriteType = {
+		name = "GFX_Senjuro"
+		texturefile = "gfx\leaders\ASA\Portrait_ASA_Senjuro.dds"
+	}
+	  spriteType = {
+		name = "GFX_Hideko"
+		texturefile = "gfx\leaders\ASA\Portrait_ASA_Hideko.dds"
+	}
+	spriteType = {
+		name = "GFX_Shikai"
+		texturefile = "gfx\leaders\ASA\Portrait_ASA_Shikai.dds"
+	}
+	spriteType = {
+		name = "GFX_Sunchan"
+		texturefile = "gfx\leaders\ASA\Portrait_ASA_Sunchan.dds"
+	}
+	spriteType = {
+		name = "GFX_Tomoyuki"
+		texturefile = "gfx\leaders\ASA\Portrait_ASA_Tomoyuki.dds"
+	}
+	spriteType = {
+		name = "GFX_Kuribayashi"
+		texturefile = "gfx\leaders\ASA\Portrait_ASA_Kuribayashi.dds"
+	}
+	spriteType = {
+		name = "GFX_Yasumasa"
+		texturefile = "gfx\leaders\ASA\Portrait_ASA_Yasumasa.dds"
+	}
+	spriteType = {
+		name = "GFX_Lihuang"
+		texturefile = "gfx\leaders\ASA\Portrait_ASA_Lihuang.dds"
+	}
+	spriteType = {
+		name = "GFX_Bufang"
+		texturefile = "gfx\leaders\ASA\Portrait_ASA_Bufang.dds"
+	}
+	spriteType = {
+		name = "GFX_Sukenuri"
+		texturefile = "gfx\leaders\ASA\Portrait_ASA_Sukenuri.dds"
+	}
+	spriteType = {
+		name = "GFX_Esimity"
+		texturefile = "gfx\interface\ideas\portrait_ASA_Esimity_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Prince_Asaka"
+		texturefile = "gfx\interface\ideas\portrait_ASA_prince_Asaka_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Prince_Chichibu"
+		texturefile = "gfx\interface\ideas\portrait_ASA_prince_Chichibu_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Prince_Mikasa"
+		texturefile = "gfx\interface\ideas\portrait_ASA_prince_Mikasa_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Mao"
+		texturefile = "gfx\interface\ideas\portrait_ASA_MAO_small.dds"
+	}
+	spriteType = {
+		name = "GFX_LIUSHA"
+		texturefile = "gfx\interface\ideas\portrait_ASA_LIUSHA_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Yuming"
+		texturefile = "gfx\interface\ideas\portrait_ASA_Yuming_small.dds"
+	}
+    spriteType = {
+		name = "GFX_Ozaki"
+		texturefile = "gfx\interface\ideas\portrait_ASA_Ozaki_small.dds"
+	}
+	 spriteType = {
+		name = "GFX_Kaishi"
+		texturefile = "gfx\interface\ideas\portrait_ASA_Kaishi_small.dds"
+	}
+	 spriteType = {
+		name = "GFX_Anabuki"
+		texturefile = "gfx\interface\ideas\portrait_ASA_Anabuki_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Sasaki"
+		texturefile = "gfx\interface\ideas\portrait_ASA_Sasaki_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Kuroe"
+		texturefile = "gfx\interface\ideas\portrait_ASA_Kuroe_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Wang"
+		texturefile = "gfx\interface\ideas\portrait_ASA_Wang_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Chenault"
+		texturefile = "gfx\interface\ideas\portrait_ASA_Chenault_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Siguama"
+		texturefile = "gfx\interface\ideas\portrait_ASA_Siguama_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Kanin"
+		texturefile = "gfx\interface\ideas\portrait_ASA_Kanin_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Shisan"
+		texturefile = "gfx\interface\ideas\portrait_ASA_Shisan_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Pui"
+		texturefile = "gfx\interface\ideas\portrait_ASA_Pui_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Chen"
+		texturefile = "gfx\interface\ideas\portrait_ASA_Chen_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Matsuia"
+		texturefile = "gfx\interface\ideas\portrait_ASA_Matsui_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Yusan"
+		texturefile = "gfx\interface\ideas\portrait_ASA_Yusan_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Yue"
+		texturefile = "gfx\interface\ideas\portrait_ASA_Yue_small.dds"
+	}
+#Европа
+spriteType = {
+		name = "GFX_Djay_Sinh"
+		texturefile = "gfx\leaders\EUR\Portrait_EUR_Djay_Sinh.dds"
+	}
+spriteType = {
+		name = "GFX_Rommel"
+		texturefile = "gfx\leaders\EUR\Portrait_EUR_Rommel.dds"
+	}
+spriteType = {
+		name = "GFX_Manshtein"
+		texturefile = "gfx\leaders\EUR\Portrait_EUR_Manshtein.dds"
+	}
+spriteType = {
+		name = "GFX_Kluge"
+		texturefile = "gfx\leaders\EUR\Portrait_EUR_Kluge.dds"
+	}
+spriteType = {
+		name = "GFX_List"
+		texturefile = "gfx\leaders\EUR\Portrait_EUR_List.dds"
+	}
+spriteType = {
+		name = "GFX_Lindeman"
+		texturefile = "gfx\leaders\EUR\Portrait_EUR_Lindeman.dds"
+	}
+spriteType = {
+		name = "GFX_Shukov"
+		texturefile = "gfx\leaders\EUR\Portrait_EUR_Shukov.dds"
+	}
+spriteType = {
+		name = "GFX_Konev"
+		texturefile = "gfx\leaders\EUR\Portrait_EUR_Konev.dds"
+	}
+spriteType = {
+		name = "GFX_Rokkosovski"
+		texturefile = "gfx\leaders\EUR\Portrait_EUR_Rokkosovski.dds"
+	}
+#Африка
+spriteType = {
+		name = "GFX_Smuts"
+		texturefile = "gfx\leaders\AFR\Portrait_AFR_Smuts.dds"
+	}
+	
+	
+	
+	
+	
+	
+	
+#Океания
+spriteType = {
+	name = "GFX_Robert"
+	texturefile = "gfx/interface/ideas/portrait_OCA_Robert_small.dds"
+}
+spriteType = {
+		name = "GFX_Bernand"
+		texturefile = "gfx\leaders\OCA\Portrait_OCA_Bernand.dds"
+	}
+spriteType = {
+		name = "GFX_Carl_III"
+		texturefile = "gfx\interface\ideas\portrait_OCA_Carl_III_small.dds"
+	}	
+	
+	
+}				

@@ -1,0 +1,860 @@
+ASA_daimler_benz_organization = {
+	include = generic_tank_organization
+	icon = GFX_idea_osaka_army_arsenal
+	
+	allowed = {	
+		OR = {
+			original_tag = ASA
+			AND = {
+				original_tag = BRA
+				has_dlc = "Trial of Allegiance"
+			}
+			AND = {
+				original_tag = BEL
+				has_dlc = "Gotterdammerung"
+			}
+		}
+	}
+
+	available = {
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = ASA } }
+			}
+			FROM = { NOT = { has_war_with = ASA } }
+		}
+	}
+	
+	tree_header_text = {
+		text = mio_header_tank_construction
+		x = 2
+	}
+
+	tree_header_text = {
+		text = mio_header_equipment_and_specialization
+		x = 6
+	}
+
+	tree_header_text = {
+		text = mio_header_armor
+		x = 8
+	}
+
+	initial_trait = {
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+	}
+
+	override_trait = {
+		token = generic_mio_trait_simplified_suspension
+		
+		position = { x=0 y=0 }
+	}
+
+	override_trait = {
+    	token = generic_mio_trait_improved_tooling
+
+    	relative_position_id = ASA_mio_trait_versatile_chassis
+		
+		all_parents = { generic_mio_trait_improved_tracks generic_mio_trait_command_upgrades ASA_mio_trait_versatile_chassis }
+
+    	position = { x=0 y=1 }
+  	}
+    #override_trait = {
+    #    token = generic_mio_trait_crew_ergonomics
+    #    position = { x=3 y=0 }
+    #}
+
+	add_trait = {  
+		token = ASA_mio_trait_hotrolled_armor
+		name = ASA_mio_trait_hotrolled_armor
+		icon = GFX_generic_mio_department_icon_tank_general_technology
+		special_trait_background = yes
+
+		position = { x=8 y=0 }  
+		
+		limit_to_equipment_type = { light_tank_chassis medium_tank_chassis }
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+			production_efficiency_gain_factor = 0.05
+		}
+
+		ai_will_do = {
+			base = 2
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+		}
+	}
+
+	add_trait = {
+		token = ASA_mio_trait_multilayer_armour
+		name = ASA_mio_trait_multilayer_armour
+		icon = GFX_generic_mio_trait_icon_armor_value
+		special_trait_background = yes
+
+		position = { x=0 y=2 }
+		relative_position_id = ASA_mio_trait_hotrolled_armor
+		
+		any_parent = { ASA_mio_trait_hotrolled_armor }
+		
+		limit_to_equipment_type = { light_tank_chassis medium_tank_chassis }
+		
+		equipment_bonus = {
+			armor_value = 0.1
+		} 
+
+		ai_will_do = {
+			base = 2
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+		}
+	}
+
+	add_trait = {
+		token = ASA_mio_trait_hoesch_facilities
+		name = ASA_mio_trait_hoesch_facilities
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+
+		position = { x=@tank_hoesch_X y=@tank_hoesch_Y }  
+		
+		visible = {
+			FROM = { original_tag = ASA } 	
+		}
+
+		available = {
+			FROM = {
+				NOT = { has_country_flag = ASA_hoesch_facilities_trait_taken_flag }
+			}
+		}
+
+		on_complete = {
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
+			FROM = {
+				set_country_flag = ASA_hoesch_facilities_trait_taken_flag
+			}
+		}
+
+		production_bonus = {
+			production_capacity_factor = 0.05
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	add_trait = {  
+		token = ASA_mio_trait_versatile_chassis
+		name = ASA_mio_trait_versatile_chassis
+		icon = GFX_generic_mio_department_icon_tank_general_production
+		special_trait_background = yes
+
+		relative_position_id = generic_mio_trait_standardized_components
+		
+		all_parents = {  generic_mio_trait_standardized_components }
+
+		position = { x=0 y=1 }  
+		
+		production_bonus = {
+			production_capacity_factor = 0.05
+		}
+
+		ai_will_do = {
+			base = 2
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+		}
+	}
+
+	add_trait = {  
+		token = ASA_mio_trait_tungsten_tipped_rounds
+		name = ASA_mio_trait_tungsten_tipped_rounds
+		icon = GFX_generic_mio_department_icon_tank_general_at
+		special_trait_background = yes
+
+		relative_position_id = generic_mio_trait_long_barreled_guns
+		
+		all_parents = {  generic_mio_trait_long_barreled_guns }
+
+		position = { x=0 y=1 }  
+
+		available = {
+            FROM = {
+                has_tech = antitank2
+            }
+        }
+		
+		equipment_bonus = {
+			ap_attack = 0.05
+			hard_attack = 0.05
+		}
+
+		ai_will_do = {
+			base = 2
+			modifier = {
+				factor = 1.5
+				date > 1937.1.1
+			}
+		}
+	}
+}
+
+
+ASA_porsche_organization = {
+	include = generic_heavy_tank_organization
+	icon = GFX_idea_porsche
+	
+	allowed = {	
+		OR = {
+			original_tag = ASA
+			AND = {
+				original_tag = MEX 
+				has_dlc = "Man the Guns"
+			}
+			NOR_AAT = yes
+		}
+	}
+
+	available = {
+		# When in a Foreign MIO, countries need to be at peace with original country
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = ASA } }
+			}
+			FROM = { NOT = { has_war_with = ASA } }
+		}
+
+		IF = {
+			limit = {
+				FROM = { original_tag = MEX }
+			}
+			FROM = { is_in_faction_with = ASA }
+		}
+		ELSE_IF = {
+			limit = {
+				FROM = { original_tag = NOR }
+			}
+			FROM = { has_completed_focus = NOR_invite_german_engineers }
+		}
+	}
+
+	tree_header_text = {
+		text = mio_header_engine_and_drive_system
+		x = 0.5
+	}
+
+	tree_header_text = {
+		text = mio_header_chassis
+		x = 4
+	}
+
+	tree_header_text = {
+		text = mio_header_guns_and_turret
+		x = 7
+	}
+
+	override_trait = {
+		token = generic_mio_trait_wide_tracks
+		
+		position = { x=0 y=0 }
+	}
+
+	override_trait = {
+		token = generic_mio_trait_one_piece_hull_side_coverings
+		
+		position = { x=3 y=0 }
+	}
+
+	override_trait = {
+		token = generic_mio_trait_improved_crew_ergonomics
+
+		position = { x=0 y=2 }
+	}
+
+	override_trait = {
+		token = generic_mio_trait_fully_cast_turret
+
+		position = { x=4 y=0 }
+	}
+
+	add_trait = {
+		token = ASA_mio_trait_hoesch_facilities
+		name = ASA_mio_trait_hoesch_facilities
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+
+		position = { x=@tank_hoesch_X y=@tank_hoesch_Y }
+
+		visible = {
+			FROM = { original_tag = ASA }
+		}
+
+		available = {
+			FROM = {
+				NOT = { has_country_flag = ASA_hoesch_facilities_trait_taken_flag }
+			}
+		}
+
+		on_complete = {
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
+			FROM = {
+				set_country_flag = GER_hoesch_facilities_trait_taken_flag
+			}
+		}
+
+		production_bonus = {
+			production_capacity_factor = 0.05
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	add_trait = {
+		token = ASA_mio_trait_involve_porsche_in_special_projects
+		name = ASA_mio_trait_involve_porsche_in_special_projects
+		icon = GFX_generic_mio_department_icon_facilities
+		special_trait_background = yes
+
+		position = { x=0 y=1 }
+		relative_position_id = ASA_mio_trait_hoesch_facilities
+
+		visible = {
+			FROM = { original_tag = ASA }
+		}
+
+		available = {
+			has_mio_size > 4
+		}
+
+		on_complete = {
+			custom_effect_tooltip = {
+				localization_key = available_scientist_one_line_tt
+				CHARACTER = GER_ferdinand_porsche
+			}
+		}
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	add_trait = {
+		token = ASA_mio_trait_multi_role_tanks
+		name = ASA_mio_trait_multi_role_tanks
+		icon = GFX_generic_mio_department_icon_tank_heavy_tank_aa
+		special_trait_background = yes
+
+		position = { x=2 y=0 }
+		relative_position_id = generic_mio_trait_one_piece_hull_side_coverings
+
+		visible = {
+			FROM = { original_tag = ASA }
+		}
+
+		available = {
+		}
+
+		equipment_bonus = {
+			soft_attack = 0.05
+			air_attack = 0.05
+			hard_attack = 0.05
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	add_trait = {
+		token = ASA_mio_trait_anti_tank_specialization
+		name = ASA_mio_trait_anti_tank_specialization
+		icon = GFX_generic_mio_department_icon_tank_heavy_tank_at
+		special_trait_background = yes
+
+		all_parents = {
+            generic_mio_trait_one_piece_hull_side_coverings
+            GER_mio_trait_multi_role_tanks
+        }
+
+		position = { x=1 y=1 }
+		relative_position_id = generic_mio_trait_one_piece_hull_side_coverings
+
+		visible = {
+			FROM = { original_tag = ASA }
+		}
+
+		available = {
+		}
+
+		equipment_bonus = {
+			hard_attack = 0.05
+			ap_attack = 0.05
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	add_trait = {
+		token = ASA_mio_trait_unorthodox_transmission_design
+		name = ASA_mio_trait_unorthodox_transmission_design
+		icon = GFX_generic_mio_department_icon_tank_heavy_tank_engine
+		special_trait_background = yes
+
+		all_parents = {
+            generic_mio_trait_simplified_transmission_system
+        }
+
+		position = { x=-1 y=1 }
+		relative_position_id = generic_mio_trait_simplified_transmission_system
+
+		visible = {
+			FROM = { original_tag = ASA }
+		}
+
+		available = {
+			
+		}
+
+		limit_to_equipment_type = { 
+			armor
+		}
+
+		equipment_bonus = {
+			maximum_speed = 0.05
+			reliability = -0.02
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+}
+
+
+
+ASA_alkett_organization = {
+	include = generic_assault_guns_organization
+	icon = GFX_idea_GER_alkett
+	
+	allowed = {	
+		original_tag = ASA
+	}
+
+	tree_header_text = {
+		text = mio_header_light_tank_department
+		x = 1
+	}
+
+	tree_header_text = {
+		text = mio_header_medium_tank_department
+		x = 4
+	}
+
+	tree_header_text = {
+		text = mio_header_heavy_tank_department
+		x = 7
+	}
+
+	
+
+	#override_trait = {
+	#	token = generic_mio_trait_fully_cast_turret_assault_gun
+#
+	#	position = { x = 0 y = 2 }	
+	#}
+	
+	add_trait = {
+		token = ASA_mio_trait_hoesch_facilities
+		name = ASA_mio_trait_hoesch_facilities
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+		
+		position = { x=@tank_hoesch_X y=@tank_hoesch_Y }  
+
+		visible = {
+			FROM = { original_tag = ASA }
+		}
+
+		available = {
+			FROM = {
+				NOT = { has_country_flag = ASA_hoesch_facilities_trait_taken_flag }
+			}
+		}
+
+		on_complete = {
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
+			FROM = {
+				set_country_flag = ASA_hoesch_facilities_trait_taken_flag
+			}
+		}
+
+		production_bonus = {
+			production_capacity_factor = 0.05
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	add_trait = {
+		token = ASA_mio_trait_panzerjager
+		name = ASA_mio_trait_panzerjager
+		icon = GFX_generic_mio_department_icon_tank_general_at
+		special_trait_background = yes 
+
+		position = { x = 0 y = 1 }
+		relative_position_id = generic_mio_medium_assault_gun_75_mm_43M_tank_gun
+
+		all_parents = { generic_mio_medium_assault_gun_75_mm_43M_tank_gun }
+
+		visible = {
+			FROM = { original_tag = ASA }
+		}
+
+		limit_to_equipment_type = { heavy_tank_artillery_chassis medium_tank_artillery_chassis}
+
+		equipment_bonus = {
+			ap_attack = 0.05
+			hard_attack = 0.1
+			
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+	
+	add_trait = {
+		token = ASA_mio_trait_armored_superstructure_specialist
+		name = ASA_mio_trait_armored_superstructure_specialist
+		icon = GFX_generic_mio_department_icon_tank_general_armor
+		special_trait_background = yes 
+
+		position = { x = 9 y = 1 }
+
+		visible = {
+			FROM = { original_tag = ASA }
+		}
+
+		available = {
+		}
+
+		equipment_bonus = {
+			armor_value = 0.05
+			defense = 0.05
+		}
+		production_bonus = {
+		    production_efficiency_cap_factor = 0.05
+			production_efficiency_gain_factor = 0.05
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	add_trait = {
+		token = ASA_mio_trait_sturmhaubitze
+		name = ASA_mio_trait_sturmhaubitze
+		icon = GFX_generic_mio_department_icon_tank_general_at
+		special_trait_background = yes 
+
+		position = { x = 9 y = 2 }
+		
+		visible = {
+			FROM = { original_tag = ASA }
+		}
+
+
+		limit_to_equipment_type = { medium_tank_artillery_chassis heavy_tank_artillery_chassis }
+
+		equipment_bonus = {
+			soft_attack = 0.1
+			hard_attack = 0.05
+			breakthrough = 0.05
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+}
+
+
+
+ASA_messerschmitt_organization = {
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_messerschmitt
+	
+	allowed = {	
+		OR = {
+			original_tag = ASA
+			NOR_AAT = yes 
+		}
+	}
+
+	available = {
+		# When in a Foreign MIO, countries need to be at peace with original country
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = ASA } }
+			}
+			FROM = { NOT = { has_war_with = ASA } }
+		}
+	}
+
+	add_trait = {
+		token = ASA_mio_trait_maintenance_first_design
+		name = ASA_mio_trait_maintenance_first_design
+
+		icon = GFX_generic_mio_department_icon_plane_fighter_line_efficiency
+		special_trait_background = yes
+		
+		position = { x=-2 y=1 }
+		relative_position_id = generic_mio_trait_expanded_production_facilities
+
+		all_parents = { generic_mio_trait_expanded_production_facilities }
+
+		equipment_bonus = {
+			reliability = 0.05
+		}
+
+		production_bonus = {
+			production_efficiency_gain_factor = 0.05
+		}
+	}
+
+	add_trait = {
+		token = ASA_mio_trait_fuselage_based_weapons
+		name = ASA_mio_trait_fuselage_based_weapons
+
+		icon = GFX_generic_mio_trait_icon_anti_air_attack
+		special_trait_background = yes
+		
+		position = { x=1 y=1 }
+		relative_position_id = generic_mio_trait_gun_pods
+
+		any_parent = { generic_mio_trait_heavier_airframe generic_mio_trait_maximum_wing_loads generic_mio_trait_gun_pods }
+
+		equipment_bonus = {
+			air_attack = 0.05
+			air_agility = 0.05
+		} 
+	}
+  
+ASA_dornier_organization = {
+	include = generic_medium_aircraft_organization
+	icon = GFX_idea_dornier
+	
+	allowed = {	
+		original_tag = ASA 
+	}
+
+	add_trait = {
+		token = ASA_mio_trait_flying_boat_specialist
+		name = ASA_mio_trait_flying_boat_specialist
+		icon = GFX_generic_mio_trait_icon_torpedo_attack
+		special_trait_background = yes
+		
+		position = { x=-1 y=1 }
+		relative_position_id = generic_mio_trait_skip_bombing
+		all_parents = { generic_mio_trait_skip_bombing }
+
+		limit_to_equipment_type = { mio_cat_eq_all_medium_plane }
+
+		equipment_bonus = {
+			surface_detection = 0.03
+			naval_strike_attack = 0.05
+		} 
+	}
+
+	add_trait = {
+		token = ASA_mio_trait_schnellbomber_doctrine
+		name = ASA_mio_trait_schnellbomber_doctrine
+		icon = GFX_generic_mio_department_icon_plane_medium_engine
+		special_trait_background = yes
+		
+		position = { x=-1 y=1 }
+		relative_position_id = generic_mio_trait_refined_engines
+		all_parents = { generic_mio_trait_refined_engines }
+
+		limit_to_equipment_type = { mio_cat_eq_all_medium_plane }
+
+		equipment_bonus = {
+			maximum_speed = 0.1
+		} 
+	} 
+
+	add_trait = {
+		token = ASA_mio_trait_hamburger_flugzeugbau
+		name = ASA_mio_trait_hamburger_flugzeugbau
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+
+		position = { x=@aircraft_hamburger_X y=@aircraft_hamburger_Y }  
+		
+		visible = {
+			FROM = { original_tag = ASA }
+		}
+
+		on_complete = {
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
+			FROM = {
+				set_country_flag = ASA_hamburger_flugzeugbau_trait_taken_flag
+			}
+		}
+
+		production_bonus = {
+			production_capacity_factor = 0.05
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	add_trait = {
+		token = ASA_mio_trait_aerodynamic_research_insitute
+		name = ASA_mio_trait_aerodynamic_research_insitute
+		icon = GFX_generic_mio_department_icon_facilities
+		special_trait_background = yes
+
+		relative_position_id = ASA_mio_trait_flying_boat_specialist
+
+		position = { x = 2 y = 0 }  
+		
+		visible = {
+			FROM = { original_tag = ASA }
+		}
+
+
+		on_complete = {
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
+			FROM = {
+				set_country_flag = ASA_mio_trait_aerodynamic_research_insitute_taken_flag
+			}
+		}
+
+		organization_modifier = {
+		    military_industrial_organization_research_bonus = 0.1
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+}
+
+ASA_arado_flugzeugwerke_organization = {
+	include = generic_multi_role_aircraft_organization
+	icon = GFX_idea_GER_arado_flugzeugwerke
+	
+	allowed = {	
+		original_tag = ASA
+	}
+
+	add_trait = {
+		token = ASA_mio_trait_jet_bomber_innovator
+		name = ASA_mio_trait_jet_bomber_innovator
+		icon = GFX_generic_mio_department_icon_plane_medium_engine
+		special_trait_background = yes
+		
+		position = { x=0 y=1 }
+		relative_position_id = ASA_mio_trait_hamburger_flugzeugbau
+
+		available = {
+			FROM = {
+				is_special_project_completed = sp:sp_air_jet_engine
+			}
+		}
+
+		limit_to_equipment_type = { mio_cat_eq_all_medium_plane }
+
+		equipment_bonus = {
+			maximum_speed = 0.1
+		} 
+	} 
+
+	add_trait = {
+		token = ASA_mio_trait_hamburger_flugzeugbau
+		name = ASA_mio_trait_hamburger_flugzeugbau
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+		
+		position = { x=@aircraft_hamburger_X y=@aircraft_hamburger_Y }  
+
+		visible = {
+			FROM = { original_tag = ASA }
+		}
+
+
+		on_complete = {
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
+			FROM = {
+				set_country_flag = GER_hamburger_flugzeugbau_trait_taken_flag
+			}
+		}
+
+		production_bonus = {
+			production_capacity_factor = 0.05
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	add_trait = {
+		token = ASA_mio_trait_aerodynamic_research_insitute
+		name = ASA_mio_trait_aerodynamic_research_insitute
+		icon = GFX_generic_mio_department_icon_facilities
+		special_trait_background = yes
+
+		relative_position_id = ASA_mio_trait_hamburger_flugzeugbau
+
+		position = { x = -1 y = 0 }  
+		
+		visible = {
+			FROM = { original_tag = ASA }
+		}
+
+
+		on_complete = {
+			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
+			FROM = {
+				set_country_flag = GER_mio_trait_aerodynamic_research_insitute_taken_flag
+			}
+		}
+
+		organization_modifier = {
+		    military_industrial_organization_research_bonus = 0.1
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+}
+
+ 
+
+
+

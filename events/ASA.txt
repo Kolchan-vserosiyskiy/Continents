@@ -1,0 +1,37 @@
+add_namespace = asa
+country_event = {
+    id = asa.1
+	title = asa.1.t
+	desc = asa.1.d
+	picture = GFX_report_event_german_speech
+	
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1}
+	
+ option = {
+	  name = asa.1.a
+	  ai_chance = {factor = 50}
+	  trigger = {tag = OCA}
+ }
+ option = {
+     name = asa.1.b
+	 ai_chance = {factor = 50}
+	 trigger = {tag = OCA}
+ }
+}
+
+
+country_event = {
+   id = asa.2
+   title = asa.2.tag
+   desc = asa.2.days
+   is_triggered_only = yes
+   mean_time_to_happen = {days = 2}
+   
+   option = {
+      name = asa.2.add_namespace
+	  trigger = {tag = ASA}
+   }
+}

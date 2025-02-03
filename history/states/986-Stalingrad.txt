@@ -1,0 +1,51 @@
+state = {
+	id = 986
+	name ="STATE_986" 
+	
+	state_category = megalopolis
+	manpower = 2500000
+
+	history = {
+
+		owner = EUR
+		add_core_of = EUR
+		
+		victory_points = {
+			13399 50
+		}
+		victory_points = {
+			13396 10
+		}
+		victory_points = {
+			3529 10
+		}
+		victory_points = {
+			13397 10
+		}
+		victory_points = {
+			6527 3
+		}
+		victory_points = {
+			9504 3
+		}
+		victory_points = {
+			3555 3
+		}
+		victory_points = {
+			498 3
+		}
+		
+	}
+		
+	    buildings = {
+			infrastructure = 1
+		}
+	
+
+	provinces = {
+		498 6527 9504 3555 11474 13396 3529 13399 13397 
+	}
+	
+	buildings_max_level_factor = 1.000
+	local_supplies = 0.0 
+}

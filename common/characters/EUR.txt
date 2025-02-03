@@ -1,0 +1,173 @@
+characters = {
+	EUR_Djay_Sinh = {
+		name = EUR_Djay_Sinh
+		portraits = {
+			civilian = {
+				large = GFX_Djay_Sinh
+			}
+		}
+
+	country_leader = {
+		ideology = centrism
+	    expire = "1955.1.1.1"
+		id = -1
+		desc = EUR_Djay_Sinh_desc
+	    }
+	}
+	
+	
+	EUR_Rommel = {
+	  name = EUR_Rommel
+	  portraits = {
+	     civilian = {
+		   large = GFX_Rommel
+	     }
+	  }
+	  corps_commander = {
+	     skill = 7
+		 attack_skill = 6
+		 defense_skill = 7
+		 planning_skill = 6
+		 logistics_skill = 6
+	     id = -1 
+		 traits = {	brilliant_strategist  war_hero armor_officer organizer panzer_leader hill_fighter urban_assault_specialist trickster  }
+	  }
+	}
+	
+	
+	EUR_Manshtein = {
+	  name = EUR_Manshtein
+	  portraits = {
+	     civilian = {
+		   large = GFX_Manshtein
+	     }
+	  }
+	  corps_commander = {
+	     skill = 7
+		 attack_skill = 6
+		 defense_skill = 6
+		 planning_skill = 6
+		 logistics_skill = 6
+	     id = -1 
+		 traits = {	brilliant_strategist  war_hero armor_officer panzer_leader hill_fighter  trickster infantry_leader commando }
+	  }
+	}
+	
+	
+	EUR_Kluge = {
+	  name = EUR_Kluge
+	  portraits = {
+	     civilian = {
+		   large = GFX_Kluge
+	     }
+	  }
+	  corps_commander = {
+	     skill = 6
+		 attack_skill = 5
+		 defense_skill = 7
+		 planning_skill = 6
+		 logistics_skill = 6
+	     id = -1 
+		 traits = { war_hero  organizer panzer_leader trait_reckless media_personality fast_planner unyielding_defender desert_fox  }
+	  }
+	}
+	
+	
+	EUR_List = {
+	  name = EUR_List
+	  portraits = {
+	     civilian = {
+		   large = GFX_List
+	     }
+	  }
+	  corps_commander = {
+	     skill = 5
+		 attack_skill = 5
+		 defense_skill = 5
+		 planning_skill = 5
+		 logistics_skill = 5
+	     id = -1 
+		 traits = { war_hero  organizer infantry_leader career_officer logistics_wizard infantry_officer  }
+	  }
+	}
+	
+	
+	EUR_Lindeman = {
+	  name = EUR_Lindeman
+	  portraits = {
+	     civilian = {
+		   large = GFX_Lindeman
+	     }
+	  }
+	  corps_commander = {
+	     skill = 6
+		 attack_skill = 4
+		 defense_skill = 4
+		 planning_skill = 6
+		 logistics_skill = 6
+	     id = -1 
+		 traits = { urban_assault_specialist armor_officer cavalry_officer inspirational_leader commando infantry_leader  }
+	  }
+	}
+	
+	
+	EUR_Shukov = {
+	  name = EUR_Shukov
+	  portraits = {
+	     civilian = {
+		   large = GFX_Shukov
+	     }
+	  }
+	  corps_commander = {
+	     skill = 7
+		 attack_skill = 6
+		 defense_skill = 8
+		 planning_skill = 6
+		 logistics_skill = 6
+	     id = -1 
+		 traits = { brilliant_strategist  war_hero armor_officer organizer panzer_leader winter_specialist urban_assault_specialist trickster trait_reckless  }
+	  }
+	}
+	
+	
+	EUR_Konev = {
+	  name = EUR_Konev
+	  portraits = {
+	     civilian = {
+		   large = GFX_Konev
+	     }
+	  }
+	  corps_commander = {
+	     skill = 6
+		 attack_skill = 5
+		 defense_skill = 6
+		 planning_skill = 5
+		 logistics_skill = 6
+	     id = -1 
+		 traits = { inflexible_strategist  war_hero armor_officer hill_fighter trickster infantry_leader  }
+	  }
+	}
+	
+	EUR_Rokkosovski = {
+	  name = EUR_Rokkosovski
+	  portraits = {
+	     civilian = {
+		   large = GFX_Rokkosovski
+	     }
+	  }
+	  corps_commander = {
+	     skill = 6
+		 attack_skill = 7
+		 defense_skill = 6
+		 planning_skill = 4
+		 logistics_skill = 6
+	     id = -1 
+		 traits = { war_hero armor_officer winter_specialist trickster  }
+	  }
+	}
+	
+	
+	
+	
+	
+}

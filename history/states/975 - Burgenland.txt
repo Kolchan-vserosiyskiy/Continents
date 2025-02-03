@@ -1,0 +1,27 @@
+state = {
+	id = 975
+	name = "STATE_975"
+	manpower = 298000
+
+	resources = {
+	}
+	
+	state_category = rural
+	
+	history = {
+
+ 
+		add_core_of = EUR
+		owner = EUR
+
+		buildings = {
+			infrastructure = 3
+		}
+	}
+
+	provinces = {
+	  11630
+	}
+
+	local_supplies = 0.0 
+}
