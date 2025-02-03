@@ -659,7 +659,7 @@ ASA_messerschmitt_organization = {
 			air_agility = 0.05
 		} 
 	}
-  
+}
 ASA_dornier_organization = {
 	include = generic_medium_aircraft_organization
 	icon = GFX_idea_dornier

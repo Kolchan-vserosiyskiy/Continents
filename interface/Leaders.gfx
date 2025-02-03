@@ -184,16 +184,32 @@ spriteType = {
 	
 #Океания
 spriteType = {
+	name = "GFX_Andrew"
+	textureFile = "gfx/interface/ideas/portrait_OCA_Andrew_small.dds"
+	}
+spriteType = {
+	name = "GFX_Curtis"
+	textureFile = "gfx/interface/ideas/portrait_OCA_Curtis_small.dds"
+}
+spriteType = {
+	name = "GFX_Gough"
+	textureFile = "gfx/interface/ideas/portrait_OCA_Gough_small.dds"
+}
+spriteType = {
+	name = "GFX_George"
+	texturefile = "gfx/interface/ideas/portrait_OCA_George_small.dds"
+}
+spriteType = {
 	name = "GFX_Robert"
 	texturefile = "gfx/interface/ideas/portrait_OCA_Robert_small.dds"
 }
 spriteType = {
 		name = "GFX_Bernand"
-		texturefile = "gfx\leaders\OCA\Portrait_OCA_Bernand.dds"
+		texturefile = "gfx/leaders/OCA/Portrait_OCA_Bernand.dds"
 	}
 spriteType = {
 		name = "GFX_Carl_III"
-		texturefile = "gfx\interface\ideas\portrait_OCA_Carl_III_small.dds"
+		texturefile = "gfx/interface/ideas/portrait_OCA_Carl_III_small.dds"
 	}	
 	
 	

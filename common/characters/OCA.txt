@@ -30,8 +30,68 @@ characters = {
 			traits = { true_economist }
 	}
 }
-	
-	
+
+	OCA_George = {
+		name = "George"
+		portraits = {
+			civilian = {
+				small = "GFX_George"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			cost = 150
+			traits = { navy_industry }
+			idea_token = OCA_George_token
+			ledger = civilian
+		}
+	}
+	OCA_Gough = {
+		name = "Gough"
+		portraits = {
+			civilian = {
+				small = "GFX_Gough"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			traits = { conversion_master }
+			idea_token = OCA_Gough_token
+			ledger = civilian
+		}
+	}
+	OCA_Curtis = {
+        name = "Curtis"
+        portraits = {
+            civilian = {
+                small = "GFX_Curtis"
+            }
+        }
+		advisor = {
+			slot = political_advisor
+			traits = { love_of_people }
+			cost = 150
+			idea_token = OCA_Curtis_token
+			ledger = civilian
+		}
+    }
+
+	OCA_Andrew = {	
+			name = "Andrew"
+			portraits = {
+				civilian = {
+					small = "GFX_Andrew"
+				}
+			}
+			advisor = {
+				slot = political_advisor
+				idea_token = OCA_Andrew_token
+				ledger = civilian
+				cost = 150
+				traits = { science_genius }
+		}
+	}
+
 	OCA_Carl_III = {
         name = "Carl"
         portraits = {

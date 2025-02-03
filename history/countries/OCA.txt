@@ -1,6 +1,6 @@
 capital = 285
 set_convoys = 100
-OOB = "OCA_1936"
+oob = "OCA_1936"
 
 recruit_character = OCA_Bernand
 set_technology = {
@@ -15,6 +15,10 @@ set_technology = {
 
 recruit_character = OCA_Carl_III
 recruit_character = OCA_Robert
+recruit_character = OCA_George
+recruit_character = OCA_Gough
+recruit_character = OCA_Curtis
+recruit_character = OCA_Andrew
 
 set_stability = 0.7
 set_war_support = 0.75
